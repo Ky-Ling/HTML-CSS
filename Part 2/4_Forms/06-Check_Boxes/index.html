@@ -1,0 +1,46 @@
+<!--
+ * @Date: 2021-09-25 13:37:14
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-02 09:03:37
+ * @FilePath: \HTML & CSS\Part 2\4_Forms\06-Check_Boxes\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <!-- Shortcut: input:checkbox -->
+        <input type="checkbox" id="front_end" />
+        <!-- All checkboxes need a label right after them. -->
+        <label class="label-inline" for="front-end">Front-end</label>
+        <!-- But from the result, we can see the label do not appear right after the checkbox, because milligram turns this to
+            block level element. To solve this problem, we have to use another class in the milligram. Go to the milligram.io
+            to find this class called label-inline, so we just need to add a new class in this label element. -->
+        <!-- Similarly, we can put these two elements into a div, so that we can place them vertically or do other things. -->
+      </div>
+      <div>
+        <input type="checkbox" id="back-end" checked />
+        <!-- If we wanna check this checkbox by default, we can set a attribute called checked. There ara also some other attributes,
+            like disabled and so on.  -->
+        <label class="label-inline" for="back-end">Back-end</label>
+      </div>
+      <div>
+        <input type="checkbox" id="Python">
+        <label class="label-inline" for="Python">I like Python very much</label>
+      </div>
+    </form>
+  </body>
+</html>

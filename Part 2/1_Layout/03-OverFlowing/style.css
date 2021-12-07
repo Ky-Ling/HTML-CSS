@@ -1,0 +1,20 @@
+.box {
+    border: 3px solid gold;
+    width: 150px;
+    height: 150px;
+    overflow: auto;
+    /* overflow: hidden, auto; */
+    
+    /* And we have to know that this overflow property is a shorthand of two properties --> overflow-x and overflow-y.  */
+
+    /* We can use the overflow property to control how overflow should be behave.  */
+    /* The default value is visible, if we set it to hidden, the content of overflow will be hidden, there is another value
+        called scroll. And these scroll bars are so ugly, we do not wanna show them all the time, we just wanna show them only
+        if there is extra content, so we can set this property to auto. With this, the scroll bars will only appear here only
+        when the overflow happens. */
+
+}
+
+p {
+    padding: 10px;
+}

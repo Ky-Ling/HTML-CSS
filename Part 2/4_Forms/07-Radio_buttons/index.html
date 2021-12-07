@@ -1,0 +1,44 @@
+<!--
+ * @Date: 2021-09-25 13:53:24
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-02 09:06:44
+ * @FilePath: \HTML & CSS\Part 2\4_Forms\07-Radio_buttons\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- As we all know, with checkboxes, the user can select multiple items, but sometimes we wanna limit the user to select
+        only a single item, we can either use drop-down list or radio buttons. -->
+
+    <form>
+      <div>
+        <!-- Similarly, we can add a attribute called checked in the input filed. -->
+        <!-- The name attribute is used for grouping multiple radio buttons. -->
+        <input type="radio" name="membership" id="silver" checked />
+        <label for="silver" class="label-inline">Silver</label>
+      </div>
+      <div>
+        <input type="radio" name="membership" id="gold" />
+        <label for="gold" class="label-inline">Gold</label>
+
+        <!-- So we have two radio buttons in the same group, and only one of these buttons can be selected. -->
+      </div>
+      <div>
+        <input type="radio" name="membership" id="Yellow" />
+        <label class="label-inline" for="Yellow">Yellow</label>
+      </div>
+    </form>
+  </body>
+</html>

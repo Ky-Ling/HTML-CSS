@@ -1,0 +1,43 @@
+<!--
+ * @Date: 2021-09-24 18:04:27
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-25 13:31:43
+ * @FilePath: \HTML & CSS\4-Forms\02-CSS_Frameworks\index.html
+-->
+<!-- Go to search getbootstrap.com, go to download page and copy the first line of code in CDN via jsDelivr.
+    Then go to "Doc", "Form", "From control", and go back to the VSCode and give the label element a class called form-label and the input a class called form-control
+    of the both two divs. And give the button element classes too. Give the form element a class called w-50. Change the class 
+    form-group to mb-3 of the div classes.-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="w-50" action="">
+      <div class="mb-3">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-control" type="text" id="name" />
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label" for="email">Email</label>
+        <input class="form-control" type="email" id="email" />
+      </div>
+
+      <button class="btn btn-primary" type="submit">Register</button>
+      <button class="btn btn-secondary" type="reset">Clear</button>
+    </form>
+  </body>
+</html>

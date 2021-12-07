@@ -1,0 +1,44 @@
+<!--
+ * @Date: 2021-09-25 14:33:42
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-25 18:53:43
+ * @FilePath: \HTML & CSS\4-Forms\12-Data_validation\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- If we are submitting a form, we should always validate the data and make sure it is in the right shape. -->
+    <!-- Data Validation:
+        (1): Required fields
+        (2): Emails
+        (3): Numbers 
+        (4): Dates
+    So before we submit a form, we should always validate the data, otherwise we will get data corruption and security attacks.
+
+    -->
+
+    <form>
+      <!-- Here we can apply the required attribute to make this field required.  -->
+      <input type="text" required minlength="3" maxlength="10" />
+      <!-- Then we can add a button element to submit the form. -->
+      <button type="submit">Submit</button>
+      <!-- And from the result, if we click the submit button without filling out the field, we will get an error saying. 
+        This is the basic validation that comes with HTML5 elements, and we can use the JavaScrip to change the content of
+        this error saying. Similarly, we can add maxlength or minlength attribute in the input field.
+        And we can change the type to email, date, numbers (but the two attributes are min and max instead of minlength and maxlength)
+         -->
+    </form>
+  </body>
+</html>

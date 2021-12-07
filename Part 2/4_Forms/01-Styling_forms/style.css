@@ -1,0 +1,55 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+label {
+  display: block;
+}
+/* Because labels are in-line elements, let me convert them to block level elements, they take up the entire of the page, so
+    the input filed appears on a new line. But there is a problem here, currently the vertical space between all these labels 
+    and input filed is exactly the same, so it is really hard to distinguish a label is associated with its filed, so we wanna
+    add vertical space between these input filed. */
+
+
+
+/* Use the attributes selector */
+input [type="text"],
+input [type="email"] {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* Set the vertical and horizontal padding */
+  padding: 0.5rem 0.7rem;
+
+  /* I wanna apply a transition for border-color and box-shadow */
+  transition: border-color 0.15s box-shadow 0.15s;
+
+  
+}
+
+/* Next we are going to do something with focus state: */
+input [type="text"]:focus,
+input [type="email"]:focus {
+  border-color: #7db0fb;
+  outline: 0;
+  /* We wanna add a box shadow around this border, so it is more visible. */
+  box-shadow: 0 0 0 4px rgb(24, 177, 255, 0.25);
+/* The first two 0 are for vertical and horizontal, the third 0 is for bluing, 4px is to brighten the shadow, the last is for the color */
+}
+
+
+/* Let's do something with button: */
+button{
+    background: #0d6efd;
+    color: #fff;
+    border: 0;
+    padding: 0.5rem 0.7rem;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}

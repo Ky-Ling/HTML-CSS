@@ -1,0 +1,9 @@
+.first {
+    /* display: none; */
+    /* The first paragraph will disappear */
+    visibility: hidden;
+    /* From the result, we can know that the first paragraph is not there, but the space that we had for this paragraph is still allocated.
+        So the display property hides the element as if it was never there, in contract, if we set the visibility to hidden, 
+        the element will be hidden.*/
+
+}

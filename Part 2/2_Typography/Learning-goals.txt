@@ -1,0 +1,7 @@
+1: What we will learn?
+    (1): Styling fonts
+    (2): Embedding custom fonts
+    (3): Using font services
+    (4): Best practices for text size & spacing
+    (5): Formatting text
+

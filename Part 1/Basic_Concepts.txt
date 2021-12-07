@@ -1,0 +1,27 @@
+1: URL(Uniform Resource Location): It is a way to locate a resource on the internet. Resource can be web pages(HTML Documents), 
+    images, video files, fonts and so on. 
+
+2: We type a url of a website and hit Enter. The browser(client) and Computer(web servers). The client requests a service, the 
+    servers provide the server. So our browser send a message to the server and says: hey, give me the home page of this website.
+
+3: HTTP(Hypertext Transfer Protocol): Http is a language that clients and servers use to talk to each other.
+
+4: HTTPS: Which is http with encryption, so the message exchange between the client and the server are encrypted.
+
+5: So the server receives the message and figures out what the client is asking and then it will send a message back to the client,
+    The first message is called http request(sent by client), and the second message is called http response(sent by server).
+    Every date exchange using the http protocol involves two messages(a request and a response).
+
+6: DOM(Document Object Model): This is a model represents the objects or elements in our html document. What are these elements?
+    All the building blocks of our pages, like paragraphs of text¡¢ images¡¢links and other stuff. When the browser is reading 
+    this html document that is returned from the server, it discovers the references to other resources in this document like images,
+    fonts and other stuff. Each of these resources has an address or a url, so for each resource, the browser sends a separate http
+    requests to the server to fetch that resource. Many of these http requests are sent in parallel, so we can see the page as 
+    quickly as possible. Once the browser has all the necessary resources, it will render the html document, rendering an html
+    document means displaying it, it is a fancy technical term we use often.
+
+    So in a nutshell, our browser sends an http request to the server and receives a http response, this http response contains
+    an html document, the browser reads that html document to construct a document object model and render the page.
+
+7: Inspecting HTTP Request and Responses: 
+8: Validating Web Pages: validator.w3.org --> For HTML; jigsaw.w3.org --> For CSS

@@ -1,0 +1,59 @@
+<!--
+ * @Date: 2021-09-23 14:52:56
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-23 20:28:19
+ * @FilePath: \HTML & CSS\3_Images\06-Resolution_Switching\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- We provide three different version of this image for standard and high-density screens. All 0f these standard and 
+        high-density have different solutions. -->
+    <!-- <img
+      src="..//images/meal.jpg"
+      alt="A bowl of delicious food"
+      class="meal"
+      srcset="
+        ..//images/meal.jpg    1x,
+        ..//images/meal@2x.jpg 2x,
+        ..//images/meal@3.jpg  3x
+      "
+    /> -->
+
+    <!-- If we change the width of this image to 100vm, we will get a problem. Because in our currently implementation, we are
+        going to provide the same image to all the devices you saw in the previous line. All these devices have a pixels rato of 2x,
+        so we provide the same image which is 800 x 800 to all these devices. But the browser has to resize the image, so we takes
+        up 100% of the width of the viewport, now this resizing operation can be costed to the browser, the larger in this image, the 
+        more costly this operation is going to be. Because the browser has to load the international memory in order to resize it.
+        So this is the resolution switching problem. So we wanna provide different versions of the same image for different sizes
+        for different resolution.
+    
+        What we can do is to provide the image with three different sizes like small, medium and large, and let the browser pick 
+        up the best image based on the screen resolution and pixels ratio of the device. 
+    
+        So we have to change the code:
+    -->
+    <img
+      src="..//images/meal.jpg"
+      alt="A bowl of delicious food"
+      class="meal"
+      srcset="
+        ..//images/meal.jpg     400w,
+        ..//images/meal@2x.jpg  800w,
+        ..//images/meal@3.jpg  1200w
+      "
+    />
+
+    <!-- So now our browser knows the width of the image and it can pick up the right image depending on the resolution and
+        pixel ratio of the screen. -->
+
+    <!-- Go to responsivebreakpoint.com to do something -->
+  </body>
+</html>

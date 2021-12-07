@@ -1,0 +1,61 @@
+.boxes {
+    border: 3px solid lightgray;
+    position: relative;
+}
+
+.box {
+    width: 5rem; 
+    height: 5rem;
+    /* 5 x 16px = 80px */
+}
+
+.box-one {
+    background-color: gold;
+}
+
+.box-two {
+    background-color: tomato;
+
+    /* We can change the position property to relative, so we can position this element relative to this normal position. 
+        And we have to know that the other two boxes will not be effected by positioning this box-two element.*/
+    position: relative;
+    
+    /* We are gonna add 5 rem of space on the left side of this box, it will push this box to the right side. */
+    left: 5rem;
+    /* right: -4rem */
+    /* top: 2rem; */
+    /* bottom: 3rem; */
+
+    z-index: -1;
+    /* We can move this box along the z access, by default, the z-index property of all elements is 0, if we set it to a 
+        positive value, it will move this box closer to us, if we set it a negative value, it will move away from us. */
+
+    
+
+    }
+
+
+
+/* How can we use the absolute position? First, we have to set the position property to relative in the boxes element. 
+    If we wanna position the third box, relative to the container, the container must be position relatively. */
+
+.box-three {
+    background-color: dodgerblue;
+
+    /* Then, we have to set the position property to absolute. */
+    /* position: absolute; */
+    right: 0;
+    bottom: 0;
+
+    /* When we absolutely position element, that element is removed from the normal float page, all the other elements are rendered
+        as if the absolutely position element does not exist. With absolutely positioning, we can position an element relative
+        the container, and for this to happen, the container should be positioned relatively.
+         */
+
+}
+
+
+/* Summary:  */
+/* Relative: relative to the element's normal position */
+/* Absolute: relative to the parent */
+/* Fixed: relative to the viewport */

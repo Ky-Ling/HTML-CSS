@@ -1,0 +1,71 @@
+1: What we will learn?
+    (1): CSS best practice
+    (2): CSS Variables: for removing duplication in code
+    (3): object-oriented CSS: helps us extract reuseable building blocks
+    (4): BEM: the popular naming convention for CSS classes
+
+2: Best Practices:
+    (1): Follow a nam convention
+        Kebab case: we separate multiple words using "-"  --> nav-bar
+        Camel case: the first letter of the first word should be lowercase, but the first letter of every word after should be uppercase.
+            --> navBar
+        Pascal case: the first letter of every word should be uppercase.  --> NavBar
+        Another convention: we separate multiple words using an underscore   --> nav_bar
+
+    (2): Create logical sections in your stylesheet.
+
+        /* Basic styles */
+        * {
+        box-sizing: border-box;
+        }
+
+        html {
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+
+        }
+
+        /* Forms */
+
+        /* Navigation bar */
+
+        From the example, we adding these comments help us logically separate different sections in our stylesheet.
+
+
+    (3): Avoid over-specific selectors:
+        Like: div.nav > ul.items > li {}  --> this kind of over-specific selectors are really hard to maintain.
+            How can we solve this problem? Remove the ">" and the type of the html element, and give the list element a class
+             called item, and the second selector is unnecessary.
+
+
+    (4): Avoid !important
+
+    (5): Sort CSS properties
+        For example:
+
+        .nav-item {
+            background: red;
+            color: aliceblue;
+            font-weight: bold;
+            width: 100%;
+            /* We can select all these properties and press Ctrl+Shift+p and search for Sort Lines Ascending, then we can sort these properties. */
+        }
+
+
+    (6): Take advantage of style inheritance
+
+    (7): Extract repetitive patterns
+
+    (8): Avoid repetitive values (Keep it DRY - Don't Repeat Yourself)
+
+
+
+2: Object-oriented CSS:
+    (1): Separate container and content 
+    (2): Separate structure and skin
+
+
+3: BEM (Block Element Modifier):
+     We use "--" to separate a block from a modifier and we use "__" to separate a block from a element.

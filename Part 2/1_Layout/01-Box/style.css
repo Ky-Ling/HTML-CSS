@@ -1,0 +1,11 @@
+p {
+    /* top, right, bottom, left */
+    /* As we all know, the last value is for the left padding, if we do not supply this value, the 
+       browser will use the right padding. Similarly, if we do not supply the bottom padding, the browser will use the top value.*/
+    
+       /* padding: 10px 20px 10px 20px */
+       /* Vertical padding,  Horizontal padding */
+    padding: 10px 20px; 
+    border: 5px solid gold;
+    
+}

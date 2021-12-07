@@ -1,0 +1,52 @@
+1: What we will learn? 
+    (1): Images types and formats
+    (2): Background Images
+    (3): CSS sprits
+    (4): Data urls
+    (5): Clipping Images
+    (6): Applying filters
+    (7): Supporting high-density screens
+    (8): Resolution switching
+    (9): Using modern image formats (WebP)
+    (10): Art direction
+    (11): Scalable Vector Graphics (SVG)
+    (12): Icon fonts
+
+
+2: Images types and formats:
+    In computers we have two types of images. Raster images which are made of pixels and Vector
+        images which are defined by mathematical vectors. As you can see, we use raster images for photos, and vector images
+        for simple graphics, icons, logos and so on.
+
+    And we have to know that raster images often come from cameras or scanners, but they can also be produced by software.
+        And images with extension of  JPG, PNG, GIF, etc. The larger images, the more pixels we need, and that results a larger
+        file size. 
+
+    We create vector images use software, like Adobe illustrator or any tools that allows us to draw something and exported as 
+        an SVG file, SVG is short for Scalable Vector Graphics, and these kind of images are always look so sharp at any size.
+    
+
+3: Data Urls:
+    Another optimization technique to reduce http requests. Go to cssportal.com/image-to-data to generate
+    data url. But there are still have some problems:
+    (1): size of embedded code > size of resource
+    (2): increase complexity of markup and workflow
+    (3): On mobile devices, data url are significantly slower to display then external image.
+
+4: Clipping 
+    Go to search css clip generator: then copy the code and apply to our project.
+
+
+5: Filter:
+    Go to search css filter functions:
+    such as: grayscale, blur, contrast, brightness, saturate.
+
+6: PSEUDO-CLASS SELECTORS:
+    to select an element in a particular class(state):
+    : hover
+    : active
+    : visited
+
+
+7: Resolution Switching:
+    

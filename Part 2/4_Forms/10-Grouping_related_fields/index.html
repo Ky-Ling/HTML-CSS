@@ -1,0 +1,39 @@
+<!--
+ * @Date: 2021-09-25 14:17:55
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-25 14:24:51
+ * @FilePath: \HTML & CSS\4-Forms\10-Grouping_related_fields\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- As our forms are getting more and more complex, we need to group these related fields into logic containers, this is 
+        where we use the fieldset element. -->
+    <fieldset>
+      <!-- This is the legend or label of our group. -->
+      <legend>Billing Address</legend>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </fieldset>
+    <!-- Another way: use the section instead of fieldset and the h6 instead of legend. -->
+    <section>
+      <h6>Payment</h6>
+      <input type="text" />
+      <input type="text" />
+      <input type="text" />
+    </section>
+  </body>
+</html>

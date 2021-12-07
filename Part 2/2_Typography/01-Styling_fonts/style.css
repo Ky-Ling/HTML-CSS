@@ -1,0 +1,48 @@
+
+@font-face {
+    font-family: 'opensans';
+    src: url('Fonts/open-sans/opensans-bold-webfont.woff2') format('woff2'),
+         url('Fonts/open-sans/opensans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+} 
+
+
+
+
+@font-face {
+    font-family: 'opensans';
+    src: url('Fonts/open-sans/opensans-regular-webfont.woff2') format('woff2'),
+         url('Fonts/open-sans/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+body {
+    margin: 10px;
+    /* Inheritance in CSS*/
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: ; */
+
+}
+
+h1 {
+    font-family: "opensans", Georgia, 'Times New Roman', Times, serif;
+}
+
+p {
+    /* We can change the font of this element */
+    /* Serif | Sans-Serif | Monospace */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    /* font-weight: bolder; */
+
+    font-style: italic;
+    font-size: medium;
+    color: rebeccapurple;
+    
+
+}

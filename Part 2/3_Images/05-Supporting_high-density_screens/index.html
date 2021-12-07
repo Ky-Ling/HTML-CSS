@@ -1,0 +1,38 @@
+<!--
+ * @Date: 2021-09-23 14:39:56
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-23 20:25:49
+ * @FilePath: \HTML & CSS\3_Images\05-Supporting_high-density_screens\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img
+      src="..//images/meal.jpg"
+      alt="A bowl of delicious food"
+      class="meal"
+    />
+
+    <img
+      src="..//images/meal.jpg"
+      alt="A bowl of delicious food"
+      class="meal"
+      srcset="
+        ..//images/meal.jpg    1x,
+        ..//images/meal@2x.jpg 2x,
+        ..//images/meal@3.jpg  3x
+      "
+    />
+
+    <!-- But if we do not use the source set, both of these two images are 400 x 400, that is coming from the CSS rule. But on the 
+          left side, we have an image that is 400 x 400, the right image is 800 x 800, it means the image on the right is sharper.
+          So use the source attribute, we can provide high quality version of our images for high-density screens. -->
+  </body>
+</html>

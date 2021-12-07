@@ -1,0 +1,37 @@
+<!--
+ * @Date: 2021-09-24 15:38:22
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-25 13:27:32
+ * @FilePath: \HTML & CSS\4-Forms\01-Styling_forms\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <!-- We wanna place these two input fields vertically, so we put them in the div. -->
+
+      <div class="form-group">
+        <label for="name">Name</label>
+        <!-- When we click the "Name", the input field gets focus. -->
+        <input type="text" id="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+      </div>
+
+      <!-- Submit the form -->
+      <button type="submit">Register</button>
+      <!-- Clear all the things in this form -->
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>

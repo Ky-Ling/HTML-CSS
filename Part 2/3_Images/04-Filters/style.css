@@ -1,0 +1,8 @@
+/* .meal :hover {
+  filter: grayscale(70%) blur(3px);
+} */
+
+.meal {
+  -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}

@@ -1,0 +1,45 @@
+body {
+  margin: 10px;
+}
+
+.tweet {
+  border: 3px solid lightgray;
+}
+
+/* After we defined the .tweet, if we remove the code of second paragraph, we will see a problem. Our parental element which 
+    is the article of the class tweet has collapsed, now it only contains the first paragraph, it is not containing avatar.
+    Because avatar is a floated element, and by default, parent elements do not see float elements. And if we remove the 
+    first paragraph, all we can see is the border of the parent element, because there is nothing inside of the parent element.
+    So how can we solve this problem. */
+
+/* One way is to add a div with a class of clear at the end of this container to clear the float. */
+/* The another better approach is pseudo elements. With this element we can add content before or after the content of an element */
+/* The third way is to use the overflowing property, but it is not a good approach to solve this problem. */
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.avatar {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: left;
+  /* From the result, we can know that the avatar element is pushed to the left side of the container which is tweet, and 
+        our paragraph is floating around it. This is how float works. But our paragraph is really close to our avatar, Which 
+        CSS property should be used to space them? --> margin  
+        We can add a right margin to the avatar element or a left margin to the paragraph element.*/
+  margin-right: 0.5rem;
+}
+
+/* This time, we do not wanna the second paragraph float around the floated element, what should we do? 
+        That is to say, how can we push this paragraph below the avatar element? This is where we use the clear property. */
+
+.clear {
+  /* Because we have an element that has floated to the left. If our element was floated to the right, we have to set the clear property to the right. 
+        But most of time, we prefer to set it to both, because this way we do not have to remember that direction of float. 
+        */
+  clear: both;
+} 

@@ -1,0 +1,31 @@
+<!--
+ * @Date: 2021-09-28 14:38:39
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-28 14:55:59
+ * @FilePath: \HTML & CSS\6_Writing_clean_maintainable_css_code\02-Object_oriented_css\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="hero">
+      <button class="btn btn-primary">Sign up</button>
+
+      <!-- But if we wanna have a same kind of button in another section, like a sidebar -->
+      <aside class="side-bar">
+        <button class="btn btn-secondary">Contact</button>
+      </aside>
+
+      <!-- One way is to duplicate the CSS code and change the parental element from hero to side-bar. But it is not a good approach. -->
+
+      <!-- In this case, the btn is the content, and the hero or side-bar is the container, we wanna separate the content
+        from the container. So we can remove the .hero -->
+    </header>
+  </body>
+</html>

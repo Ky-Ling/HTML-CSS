@@ -1,0 +1,90 @@
+html {
+    /* font-size: 16px; */
+    /* 62.5% of 16px = 10px */
+    /* font-size: 62.5%; */
+    font-size: 100%;
+}
+
+
+body {
+    margin: 10px;
+
+    /* 1 x font size of the root element (html)*/
+    font-size: 1rem;
+
+    /* 1.5 x 16px */
+    /* font-size: 1.5rem; */
+
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+
+
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1 {
+    font-size: 2rem;
+    margin: 3rem 0 1 rem;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    text-indent: 1rem;
+    text-decoration: underline;
+    text-transform: lowercase;
+    /* white-space: nowrap; */
+    column-count: 2;
+    /* column-gap: 1rem; */
+    /* column-rule: 3px dotted #999; */
+
+
+
+} 
+
+@media screen and (min-width: 400px) {
+    html {
+        font-size: 130%;
+    }
+}
+
+
+
+
+/* Vertical Spacing:
+    (1): margin:
+    (2): line-height
+    
+    */
+
+
+/* Horizontal Spacing:
+    (1): letter-spacing:
+    (2): word-spacing:
+    (3): width */
+
+/* Law of Proximity:
+    objects that are closer are perceived to be related. */
+
+
+/* Ideal Line Length:
+    should be between 50 - 70 characters */
+
+
+/* Formatting text:
+    (1): text-align
+    (2): text-indent
+    (3): text-decoration
+    (4): text-transform
+    (5): white-space
+    (6): column-* 
+    (7): direction
+    
+    */

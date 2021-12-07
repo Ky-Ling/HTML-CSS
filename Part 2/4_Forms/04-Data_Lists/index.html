@@ -1,0 +1,40 @@
+<!--
+ * @Date: 2021-09-24 19:18:52
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-24 19:33:53
+ * @FilePath: \HTML & CSS\4-Forms\04-Data_Lists\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- How can we implement suggestion lists in HTML?  -->
+    <!-- We wanna provide a list of suggestions when the users type something in the text filed. -->
+    <form>
+      <input type="text" list="countries" />
+      <!-- We wanna associate this datalist with the input, so we have to give it a unique ID, then we have to set a list 
+        attribute in the input filed. From the result, we can also know that the users still can
+        type anything they want into this filed. If we wanna prevent the users typing invalid values, we have to use the 
+        drop down list.
+        -->
+      <datalist id="countries">
+        <option>Australia</option>
+        <option>Canada</option>
+        <option>China</option>
+        <option>United States</option>
+      </datalist>
+    </form>
+  </body>
+</html>

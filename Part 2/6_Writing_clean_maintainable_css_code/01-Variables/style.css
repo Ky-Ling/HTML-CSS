@@ -1,0 +1,20 @@
+/* We use the root pseudo class selector, this selector matches the element. This is where we use define custom properties or
+  global variables. */
+
+/* All these properties we define here are inherited and accessible using in the var function. */
+:root {
+  --color-primary: #ffdd36;
+  --border-size: 2px;
+  --border-radius: 20px
+
+}
+
+.one {
+  background: var(--color-primary);
+
+
+}
+
+.two {
+  background: var(--color-primary);
+}

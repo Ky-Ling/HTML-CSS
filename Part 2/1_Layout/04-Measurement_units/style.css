@@ -1,0 +1,39 @@
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
+body {
+  margin: 10px;
+  width: 300px;
+}
+
+.box {
+  /* 50% of the width of the parent(the body element which is 300px), so in this example, the width of the box element is 150px */
+
+  /* All the relative values eventually get converted to pixel values by the browser */
+  /* But if we remove the width of the body, and the width of this block level element (body) is 100%, so the width of the box element will be 50px*/
+
+  /* So with the relative units,  we can create layouts that are adjust to the screen size, we can create more scalable layouts.  */
+
+  /* If we change this width to 10em, it meant 10 times font size of the current element. So it has to inherit the font size
+        property from the html element, all browser give the html element a base font size of 16px, that is to say, 
+        10 x 16px = 160px */
+
+  /* We can also set the font-size property by hand. It means 10 x 20px = 200px */
+  /* font-size: 20px; */
+
+  /* We also have another measurement unit called rem, if we change the width to 10rem, it means 10 x font size of the root element. */
+
+  /* On the top of these code, we can set something for html element. So if we set the font size of the root element to 62.5%,
+        that means, whenever we see 15rem of width, we can assume it is equivalent to 150px( 15 x 62.5% x 16px = 150px) */
+  width: 50%;
+
+  /* how can we take this box to the entire available vertical space? we have to use the viewport unit. With this unit, we can 
+        size our elements according to the width and the height of the viewport. So we can change the height of this box to 
+        100vh(short for viewport height), so this unit means 100% of the height of viewport. */
+
+  height: 100vh;
+  background-color: gold;
+  border-top: 3px solid orange;
+}

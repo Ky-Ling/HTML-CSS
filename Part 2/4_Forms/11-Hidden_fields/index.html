@@ -1,0 +1,31 @@
+<!--
+ * @Date: 2021-09-25 14:25:39
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-25 18:50:46
+ * @FilePath: \HTML & CSS\4-Forms\11-Hidden_fields\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input type="hidden" name="course-id" value="1234" />
+      <!-- From the result, we can know that this hidden field is invisible, so the users can not see it, but when we submit this
+        form to the server, the data of included in this field, in this case the 1234 will be posted to the server.
+        But even though hidden field is invisible to the user, we should never store sensitive values in there, because we can 
+        always find these values in the source code of the page. We often use hidden filed to store the id of the content be edited. -->
+    </form>
+  </body>
+</html>

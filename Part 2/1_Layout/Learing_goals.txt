@@ -1,0 +1,13 @@
+1: What we will learn?
+    1: CSS Box Model
+    2: Sizing Elements
+    3: Overflowing
+    4: Measurement units
+    5: Positioning
+    6: Floating Elements
+    7: FlexBox & Grid layouts
+    8: Media queries
+
+2: Technically, we should use the margin property to separate the elements, and the padding property
+    to add space between the border and the content area of the element. This is the right way to use these teo properties.
+

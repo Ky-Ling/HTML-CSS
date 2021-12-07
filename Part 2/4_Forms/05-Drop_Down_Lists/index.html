@@ -1,0 +1,44 @@
+<!--
+ * @Date: 2021-09-24 19:41:24
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-02 08:21:53
+ * @FilePath: \HTML & CSS\Part 2\4_Forms\05-Drop_Down_Lists\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- There is also a attribute of select which is multiple, and we can select multiple options. -->
+    <select>
+      <!-- And sometimes we may have so many options in a drop-down list, it is good to categorize them, so we can use option group element. -->
+      <optgroup label="Front-end Courses">
+        <!-- I am going to let the first option element to be empty, so this drop down list will become optional, the users do not
+        have to select value. -->
+        <option value=""></option>
+        <option value="1" selected>HTML</option>
+        <!-- With the selected, this is a boolean attribute, and HTML will be selected by default. -->
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+        <!-- These values are eventually sent to the server, when the user submit this form. -->
+      </optgroup>
+
+      <optgroup label="Back-end Courses">
+        <option value="1">Node.js</option>
+        <option value="2">ASP.NET</option>
+        <option value="3">Django</option>
+      </optgroup>
+    </select>
+  </body>
+</html>

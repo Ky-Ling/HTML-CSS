@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Notice that we apply this property to the box element, not the hover state. */
+.box {
+  width: 100px;
+  height: 100px;
+  background: gold;
+  /* Here we wanna animate the transform property, because this is the property we are updating when we are hovering over the box. */
+  /* transition: transform 0.5s linear 1s; */
+
+  /* 0.5s is the duration of this animation. And we can also add a timing function. And this animation should
+  start one second after we hover over our box. go to search cubic-bezier.com. */
+
+  transition: transform 0.5s, background 0.5s;
+}
+
+.box:hover {
+  transform: rotate(45deg);
+  background: dodgerblue;
+}

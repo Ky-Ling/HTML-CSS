@@ -1,0 +1,89 @@
+body {
+    margin: 10px;
+}
+
+
+.container {
+    border: 3px solid lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.box {
+    flex-basis: 5rem;
+    flex-grow: 1;
+    flex-shrink: 1;
+    width: 5rem;
+    height: 5rem;
+    background-color: gold;
+    margin: 1rem;
+}
+
+
+/* How can we lay these boxes out horizontally? That's where we use FlexBox. The common applications of this is navigation bars,
+    because with navigation bars, we have a bunch of menu items or hyperlinks layed out horizontally. 
+    First, go to container and set the display property to flex.  And from the result, our boxes are layed out horizontally
+    with a single line of code. So with flex, we can lay out a bunch of elements in one direction, either in a row or in a column.
+    And we can control the flex with the flex-direction property. */
+
+/* Alignment:  */
+/* Accessing Flex
+    (1): Main(Primary) access:  
+    (2): Cross(Secondary) access: 
+    These two accesses are dependent on the direction: 
+        (1): If we set the direction to row, the main access is going to be the horizontally axis, the cross access 
+            is going to be vertically axis.
+        (2): Similarly, if we set the direction to column, the main access is going to be vertically axis, the cross
+            access is going to be horizontally axis.*/
+
+/* Using these accesses, we can easily align items inside the container. With aligning items, we need to master two properties.
+    (1): Justify-content: Along the main axis
+    (2): align-items: Along the cross axis */
+
+
+/* In the container, we set the flex-direction to row, if we wanna move these items to the end of the horizontally axis, this is 
+    where we use the justify-content, and we set it to flex-end. And now, our items are pushed to the end of horizontally axis.
+    We can also set it to center and space-evenly which distributes our items with equal space between them. We also have 
+    space-between, the first and the last items are pushed to the edge of the horizontally axis, and the other items are 
+    distributed with equal space between them. There are still other values about this property.*/
+/* Similarly, we have align-items property which is to do something with items along the across axis. And we have to set height 
+    for this container.*/
+
+
+/* With Flex, we only have to master four properties: display, justify-content, align-items and flex-direction. But how about 
+    align-content property? This property only works if we have multiple lines in our flex container.*/
+
+
+/* If we wanna move one of these boxes to the top?  First, we have to give this box another class. And then we add a few now code: */
+.box-one {
+    align-self: auto;
+    /* This property is to apply to our flex item not the flex container. With the align-items property, we can rewrite the values
+        you align earlier. We can also move this box to the bottom with flex-end. */
+    flex-basis: 5rem;
+    flex-grow: 0;
+}
+
+
+
+/* Sizing items: */
+/*  (1): flex-basics(the initial size of a flex item):
+    (2): flex-grow(the growth factor):
+    (3): flex-shrink(the shrink factor):
+    (4): flex  
+    All these properties should be applied on the flex items, not flex containers.
+    
+    So go the box, we set the flex-basics to auto, nothing will happen, but if we change it to 10 rem, it will overwrite
+        the width property, because we set the direction to row, so the flex-basics translate to the width property. If we 
+        set the direction to the column, the flex-basic will translate to hight. We also can set flex-basic to 5rem in the first box.
+        
+    With flex-grow, we can allow these items to grow and take to the available space. We can also change the individual box.
+    We also have another opposite property called flex-shrink. 
+    
+    And we have to know that the flex-grow and flex-shrink take a number, not a unit.*/
+
+
+
+

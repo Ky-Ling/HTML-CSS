@@ -1,0 +1,22 @@
+1: What we will learn? 
+    (1): Build forms
+    (2): Style forms
+    (3): Text fields
+    (4): Data lists
+    (5): Drop-down lists
+    (6): Check boxes
+    (7): Radio buttons
+    (8): Sliders
+    (9): File inputs
+    (10): Hidden fields
+    (11): Data validation
+    (12): Submitting forms
+
+2: CSS Frameworks:
+    (1): Bootstrap --> getbootstrap.com
+    (2): Foundation
+    (3): Semantic UI
+    (4): UI Kit
+    (5): Materialize
+    (6): Milligram --> milligram.io
+

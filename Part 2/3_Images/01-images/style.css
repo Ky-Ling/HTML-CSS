@@ -1,0 +1,28 @@
+/* .meal {
+    width: 100vw;
+} */
+
+
+/* Background images */
+
+body {
+  background: url(../images/bg-sanfrancisco.jpg);
+
+  /* This disable the horizontally and vertical repetitions. */
+  background-repeat: no-repeat;
+
+  /* Repeat the background image in one direction:  */
+  /* background-repeat: repeat-y; */
+
+  /* If we wanna fully control over the position of the background: 
+        And the values we pass here are really depend on the images.*/
+  /* background-position: 100px 100px; */
+
+  /* We can also change the size of the image size: the first is for width, the other is for height. */
+  /* background-size: 200px 500px; */
+  background-size: auto;
+  height: 300vh;
+
+  /* If we set he value to fixed, our background is going to stay fixed relative to the viewport. */
+  background-attachment: fixed;
+}

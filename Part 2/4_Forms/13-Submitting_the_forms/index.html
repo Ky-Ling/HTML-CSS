@@ -1,0 +1,51 @@
+<!--
+ * @Date: 2021-09-25 14:50:02
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-02 09:15:13
+ * @FilePath: \HTML & CSS\Part 2\4_Forms\13-Submitting_the_forms\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- If we wanna build a content form with two fields.  -->
+ <form action="http://formspree.io/f/myybnlqn" method="POST">
+     <input type="text" placeholder="Name" name="name"></form>
+     <input type="text" placeholder="Email" name="email"></form>
+     <button type="submit">Submit</button>
+     <!-- There is another way to build a submit button: -->
+     <!-- <input type="submit" value="Submit"> -->
+     <!-- The difference of these two approaches: we can not add a icon with input element, we have to use button element, because in
+        between the opening and closing tags, we can type HTML codes. -->
+
+    <!-- For submitting the form, there are two attributes in the form element we need to know:
+        (1): action: this is where we are going to send the data, so here we have to type relative or absolute url, but what is 
+            behind the url? this is server-side technologies. And go to formspree.io, and create a new form called contact form,
+            copy the url and place it inside the action attribute. 
+        (2): method: to submit the form, each input field should have a name attribute, so add the name attribute in these two
+            input fields. Then type something and submit the form.
+        (3): All in all, the action is where you are sending the data, the method which is how we are sending the data.
+            And with the POST method, when we use this method, these fields like name and email, and their values will be included 
+            in the body of the request. And with the GET method, these fields will not be included in the body of the request, 
+            instead they will be appended to the target url. When we should use the GET method, this is used in the situation
+            where you wanna bookmark the url, so we can always get back to it, this is the benefit of the GET method.-->
+        
+    <!-- server-side technologies:
+        (1): Node/Express
+        (2): Django
+        (3): ASP.NET
+        (4): Laravel
+        (5): Ruby on Rails -->
+  </body>
+</html>

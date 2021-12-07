@@ -1,0 +1,108 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* After these three lines, our box is not vertically in the center of the screen, because our body element has grown tall
+        enough to fit this box. So we have to set the height. */
+  height: 100vh;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background: gold;
+}
+
+/* 2d: Two-dimensional transformations:  */
+
+/* Now we wanna add transformations on the hover effect so that we can see things clearly. */
+.box:hover {
+  /* We wanna rotate this box 15 degrees clockwise. */
+  transform: rotate(15deg);
+
+  /* Make this box larger or smaller:  */
+  /* transform: scale(1.9); */
+
+  /* Screwing the box: */
+  /* transform: skew(1.5deg); */
+
+  /* Move the box on the screen: */
+  /* transform: translate(10px, 10px); */
+  /* This will move the box 10 pixels on the horizontal axis and along the vertical axis */
+
+  /* Why we should use the translate function when we can use the absolute and relative positioning?
+        (1): it is easier to position elements using the translate function, if you wanna use the absolute or relative positioning
+        we have to set position: relative and use the top, right, button and left properties, and using these properties is a little
+        bit confusing for some people, so this is where we use translate function.
+        (2): This function uses hardware acceleration, so we get better performance. */
+
+  /* We can also combine these functions: */
+  /* transform: rotate(15deg) translateX(50px); */
+  /* But we also have to notice that the order of these functions is matter.  */
+}
+
+
+
+
+/* 3D: Three-dimensional transformations:  */
+.box:hover {
+  /* We can also move the box along the z-axis: we can move the box closer or father from us: */
+
+  /* Before we use the translateZ() function, we have to use perspective() function to define a virtual space. If we pass
+        200px here, it means the distance between this element and us 200px. */
+  /* If we pass the positive value, the box will be moved closer to us: */
+  transform: perspective(200px) translateZ(50px);
+  /* transform: perspective(200px) rotateX(50px); */
+
+  /* We have to pass two values in this function, one is for the x offset, the another is for y offset */
+  transform-origin: 0 50%;
+}
+
+
+
+
+
+
+/* How can we transform both of them boxes as a whole. */
+.container:hover {
+  transform: perspective(200px) translateZ(50px);
+  transform-origin: 0 50%;
+}
+
+/* How can we apply different transformations to different elements in this container? */
+.container:hover .box {
+  transform: perspective(200px) translateZ(50px);
+  transform-origin: 0 50%;
+}
+
+
+
+/* We will get a different result, because in this implementation, each box is getting its own perspective. */
+
+.container {
+  perspective: 200px;
+}
+.container:hover .box {
+  transform: translateZ(50px);
+  transform-origin: 0 50%;
+}
+
+/* So we have to define a roof container, and here we use the perspective property to define a perspective for all children
+    of this container. So in CSS, we have a perspective function which will be applied as a part of the transformation, and we 
+    also have a perspective property which will be applied to a parental or container element. When we use the perspective function,
+    we do not wanna use the perspective function, because we want to make sure that all these children share the same perspective
+    that we define in the root container. So from the result, we have two boxes and share the same perspective. */
+
+
+
+/* With this implementation, we can apply different transformation to the second box:  */
+.container {
+  perspective: 200px;
+}
+.container:hover .box {
+  transform: translateZ(50px);
+  transform-origin: 0 50%;
+}
+
+.container:hover .box-special {
+    transform: rotateX(45deg);
+}

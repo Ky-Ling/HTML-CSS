@@ -1,0 +1,7 @@
+1:Transformations: --> In CSS, we have a bunch of functions for transforming elements:
+    (1): rotate(): for rotating elements
+    (2): scale(): for make them larger or smaller
+    (3): skew(): for screwing them to the left or to the right
+    (4): translate(): for positioning them in the screen
+
+

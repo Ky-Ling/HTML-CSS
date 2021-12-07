@@ -1,0 +1,50 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    padding: 10px;
+    border: 20px solid orange;
+    margin: 50px;
+    /* By default, the width and the height properties are applied to the content of the box, so any padding or border that we 
+        apply will increase the size of the visible box. But the margin property does not impact the size of this visible box, it 
+        just move this box away from other boxes. */
+
+    box-sizing: border-box;
+    /* The box-sizing property is to calculate the size of an element and it becomes more easier and predictable */
+    /* By default, this property is set to content-box, but if we set it to border-box, the width and height will be applied to
+        the border-box, so the content area now is reduced to 40px, and if we move the padding and border properties 
+        from the css code, the content area is till 100 x 100 */
+}
+
+
+
+/* But if we have to many HTML elements, we do not wanna apply the box-sizing one by one, so we have to use the universal selector. */
+
+/* Most of time, we use the universal selector to select all elements and set their bix-sizing property to border-box, that is
+    the most common scenario */
+
+
+*, 
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* Now this box-sizing property is applied to all the elements as well as all the elements are inserted before or after the content
+    of these elements. */
+
+.body {
+    margin: 10px;
+}
+
+.body::before{
+    content: "hello";
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: gold;
+    /* display: inline; */
+    /* The inline elements, like the span, do not respect the width and height properties, to be able to give them a width and height
+        we have to set their display with inline-block */
+}

@@ -1,0 +1,65 @@
+<!--
+ * @Date: 2021-10-02 15:38:46
+ * @LastEditors: GC
+ * @LastEditTime: 2021-10-02 16:27:22
+ * @FilePath: \2-Website Header(Video Background)\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <!-- Add video background -->
+      <video autoplay loop class="back-video" muted plays-inline>
+          <source src="./media/video.mp4" type="video/mp4">
+      </video>
+        
+      <nav class="nav-links">
+        <img src="./media/logo.png" alt="This is a logo" class="logo" />
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Reviews</a></li>
+          <li><a href="">Contact</a></li>
+          <li class="btn">Sign up</li>
+        </ul>
+      </nav>
+      <div class="content">
+          <h1>Learn anything online</h1>
+          <form >
+            <input type="text" placeholder="&#x270e Enter keyword" />
+            <button type="submit">Find course</button>
+          </form>
+          <div class="category-list">
+              <div class="category">
+                  <img src="./media/coding.png" >
+                  <p>Web Dev</p>
+              </div>
+              <div class="category">
+                  <img src="./media/exercise.png" >
+                  <p>Yoga</p>
+              </div>
+              <div class="category">
+                  <img src="./media/guitar.png" >
+                  <p>Music</p>
+              </div>
+              <div class="category">
+                  <img src="./media/console.png">
+                  <p>Game Dev</p>
+              </div>
+              <div class="category">
+                  <img src="./media/language.png" >
+                  <p>Language</p>
+              </div>
+          </div>
+        
+      </div>
+    </div>
+  </body>
+</html>

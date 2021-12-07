@@ -1,0 +1,49 @@
+<!--
+ * @Date: 2021-09-24 18:34:05
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-25 13:33:35
+ * @FilePath: \HTML & CSS\4-Forms\03-Text_fields\index.html
+-->
+<!-- Go to milligram.io to copy some code. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <input
+        type="text"
+        value="codewithmosh.com"
+        placeholder="email"
+        readonly
+      />
+      <!-- There are so many attributes of the type, such as number, email, date, password and so on. -->
+      <!--  value: make the input filed pre-populated.
+        placeholder: when we do not type anything, we will see the placeholder, but when we begin to type something, the placeholder will disappear.
+        read-only: we can not change the value of the input field.
+        disable: we can not select the input filed, but the value can be sent to the server. 
+        maxlength: this is use for validation.
+        Autofocus: this is a boolean attribute, we do not have to give it a value and when we go to the page, the first input filed automatically get
+            focus, this is particular useful for logging or registration forms, because we do not wanna the users explicitly click the 
+            first input filed to activate it. 
+        -->
+
+      <!-- How can we type multiple lines of code? -->
+      <textarea name="" id="" cols="30" rows="10">Comment....</textarea>
+      <!-- textarea has some same attributes with input. But if you wanna pre-populate them, we have to type the value in between 
+        the textarea. -->
+    </form>
+  </body>
+</html>

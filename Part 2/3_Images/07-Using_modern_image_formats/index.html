@@ -1,0 +1,29 @@
+<!--
+ * @Date: 2021-09-23 15:19:44
+ * @LastEditors: GC
+ * @LastEditTime: 2021-09-23 19:36:44
+ * @FilePath: \HTML & CSS\3_Images\07-Using_modern_image_formats\index.html
+-->
+
+<!-- Firstly, we have to convert meal.jpg to meal.webp -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <img src="..//images/meal.webp" alt="" /> -->
+    <!-- <img src="..//images/meal.jpg" alt="" /> -->
+    <!-- But sometimes some browsers do not support the modern image format, so we have to use the picture element. -->
+    <picture>
+      <source type="image/webp" srcset="..//images/meal.webp" />
+      <source type="image/jpeg" srcset="..//images/meal.jpg" />
+      <img src="..//images/meal.jpg" alt="A bowl of delicious food" />
+    </picture>
+  </body>
+</html>
