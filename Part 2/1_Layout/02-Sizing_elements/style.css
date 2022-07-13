@@ -2,8 +2,8 @@
     width: 100px;
     height: 100px;
     background-color: gold;
-    padding: 10px;
-    border: 20px solid orange;
+    padding: 20px;
+    border: 10px solid orange;
     margin: 50px;
     /* By default, the width and the height properties are applied to the content of the box, so any padding or border that we 
         apply will increase the size of the visible box. But the margin property does not impact the size of this visible box, it 
