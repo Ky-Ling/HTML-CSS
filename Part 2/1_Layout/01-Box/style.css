@@ -9,3 +9,22 @@ p {
     border: 5px solid gold;
     
 }
+
+
+p {
+    padding: 20px;
+    margin: 0;
+
+    /* This time the space between these two elements is 40px */
+}
+
+p {
+    margin: 20px;
+    padding: 0
+    
+    /* margin collapse: If two elements next to each other, their margin get collapsed into a single margin */
+}
+
+/* We use margin property to separate elements, and padding property to add space between border and content
+    area of an element
+*/
